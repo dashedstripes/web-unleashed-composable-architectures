@@ -21,6 +21,7 @@ const componentMap = {
 export default function ComposablePage({ page }) {
     return (
         <div>
+            <p>Hello web unleashed</p>
             {(page.sections || []).map((section, idx) => {
                 const Component = componentMap[section.type];
                 return <Component key={idx} {...section} />;
